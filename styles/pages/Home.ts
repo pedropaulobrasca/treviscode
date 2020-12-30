@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled.div`
   display: flex;
@@ -24,9 +25,9 @@ export const Wrapper = styled.div`
   height: 100%;
 `;
 
-export const Imagem = styled.div``;
+export const Imagem = styled(motion.div)``;
 
-export const Descricao = styled.p`
+export const Descricao = styled(motion.p)`
   margin-top: 60px;
 
   font-style: normal;
@@ -44,7 +45,7 @@ export const Descricao = styled.p`
   margin-bottom: 50px;
 `;
 
-export const ProximaPagina = styled.div`
+export const ProximaPagina = styled(motion.div)`
   position: fixed;
   bottom: 0;
   margin-bottom: 50px;

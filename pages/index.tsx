@@ -17,31 +17,22 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        <Imagem>
-          <motion.div
-            animate={{ x: [-1000, 0] }}
-            transition={{ ease: 'easeOut', duration: 1 }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <Image
-              src="/img/me.png"
-              alt="Pedro"
-              width={182.65}
-              height={165.27}
-            />
-          </motion.div>
+        <Imagem
+          animate={{ x: [-1000, 0] }}
+          transition={{ ease: 'easeOut', duration: 1 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <Image src="/img/me.png" alt="Pedro" width={182.65} height={165.27} />
         </Imagem>
-        <Descricao>
-          <motion.div
-            animate={{ x: [1000, 0] }}
-            transition={{ ease: 'easeOut', duration: 1 }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            👋 <br /> Olá, sou <span>Pedro</span>. <br /> Desenvolvedor Web e
-            Mobile.
-          </motion.div>
+        <Descricao
+          animate={{ x: [1000, 0] }}
+          transition={{ ease: 'easeOut', duration: 1 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          👋 <br /> Olá, sou <span>Pedro</span>. <br /> Desenvolvedor Web e
+          Mobile.
         </Descricao>
         <ProximaPagina>
           <Link href="/contato">
