@@ -16,7 +16,11 @@ const Sobre: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        <VoltarPagina>
+        <VoltarPagina
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <Link href="/">
             <div>
               <Lottie
@@ -34,7 +38,11 @@ const Sobre: React.FC = () => {
             </div>
           </Link>
         </VoltarPagina>
-        <Texto>
+        <Texto
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <p>
             Atualmente estudando Analise e Desenvolvimento de Sistemas e tenho
             foco em me tornar um desenvolvedor fullstack. Estudo tecnologias que
@@ -46,7 +54,11 @@ const Sobre: React.FC = () => {
             <span>Sempre em busca de novos conhecimentos.</span> 🚀👽
           </p>
         </Texto>
-        <Imagem>
+        <Imagem
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <Lottie
             options={{
               loop: true,
@@ -58,7 +70,11 @@ const Sobre: React.FC = () => {
             }}
           />
         </Imagem>
-        <ProximaPagina>
+        <ProximaPagina
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
           <Link href="/contato">
             <div>
               <Lottie
