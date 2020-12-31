@@ -18,12 +18,12 @@ import arrowDown from '../public/img/arrow-down.json';
 import contactImage from '../public/img/contact-img.json';
 import contact from '../public/img/contact.json';
 
-const handleSubmit = (e: MouseEvent) => {
-  e.preventDefault();
-  alert('asdas');
-};
-
 const Contato: React.FC = () => {
+  const handleSubmit = (e: MouseEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    alert('asdas');
+  };
+
   return (
     <Container>
       <Wrapper>
