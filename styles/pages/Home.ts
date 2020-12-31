@@ -49,4 +49,8 @@ export const ProximaPagina = styled(motion.div)`
   position: fixed;
   bottom: 0;
   margin-bottom: 50px;
+
+  div {
+    cursor: pointer;
+  }
 `;

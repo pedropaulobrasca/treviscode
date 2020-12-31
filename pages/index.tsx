@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Lottie from 'react-lottie';
 import Link from 'next/link';
@@ -35,19 +34,21 @@ const Home: React.FC = () => {
           Mobile.
         </Descricao>
         <ProximaPagina>
-          <Link href="/contato">
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData: arrowDown,
-                rendererSettings: {
-                  preserveAspectRatio: 'xMidYMid slice',
-                },
-              }}
-              height={50}
-              width={60}
-            />
+          <Link href="/sobre">
+            <div>
+              <Lottie
+                options={{
+                  loop: true,
+                  autoplay: true,
+                  animationData: arrowDown,
+                  rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice',
+                  },
+                }}
+                height={50}
+                width={60}
+              />
+            </div>
           </Link>
         </ProximaPagina>
       </Wrapper>
